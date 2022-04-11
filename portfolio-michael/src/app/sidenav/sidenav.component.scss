@@ -99,5 +99,10 @@
 }
 
 .active {
-  background-color: #c89d7c;
+  background-color: #fff;
+
+  .sidenav-link-icon,
+  .sidenav-link-text {
+    color: #000;
+  }
 }

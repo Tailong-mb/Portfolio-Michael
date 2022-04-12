@@ -1,1 +1,27 @@
-<p>contact works!</p>
+<div class="contact-back">
+  <h1>Contact</h1>
+  <div class="wrapper">
+    <form (ngSubmit)="submitForm()">
+      <div class="input-data">
+        <input type="text" name="name" required [(ngModel)]="name" />
+        <div class="underline"></div>
+        <label>Nom</label>
+      </div>
+      <div class="input-data">
+        <input type="text" name="email" required [(ngModel)]="email" />
+        <div class="underline"></div>
+        <label>Email</label>
+      </div>
+
+      <div class="name-zone">
+        <label>Message</label>
+        <textarea
+          name="message"
+          class="textarea"
+          [(ngModel)]="message"
+        ></textarea>
+      </div>
+      <button type="submit" class="submit-button">Envoyer</button>
+    </form>
+  </div>
+</div>

@@ -1,21 +1,87 @@
-.body {
-  width: calc(100% - 5rem);
-  height: 100vh;
-  margin-left: 5rem;
-  z-index: 0;
-  position: relative;
-  top: 0;
-  transition: all 5es ease;
-  background: #f4f7fa;
-  padding: 3rem;
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
 }
 
-.body-trimmed {
-  width: calc(100% - 16.625rem);
-  margin-left: 16.5625;
-}
+.contact-back {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+  background-color: #c89d7c;
+  background-image: linear-gradient(315deg, #e2ac6b 0%, #c89d7c 74%);
+  gap: calc(100% + 5rem);
 
-.body-md-screen {
-  width: calc(100% - 5rem);
-  margin-left: 5rem;
+  h1 {
+    color: #fff;
+  }
+
+  .wrapper {
+    width: auto;
+    background: #fff;
+    padding: 1.875rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: calc(100% + 1.65rem);
+
+      .input-data {
+        height: 2.5rem;
+        width: 100%;
+        position: relative;
+
+        input {
+          height: 100%;
+          width: 100%;
+          border: none;
+          font-size: 17px;
+          border-bottom: 2px solid silver;
+        }
+
+        input:focus ~ label,
+        input:valid ~ label {
+          transform: translateY(-1.25rem);
+          font-size: 0.938rem;
+          color: #e2ac6b;
+        }
+
+        label {
+          position: absolute;
+          bottom: 0.626rem;
+          left: 0px;
+          color: grey;
+          pointer-events: none;
+          transition: all 0.3s ease;
+        }
+
+        .underline {
+          position: absolute;
+          bottom: 0px;
+          height: 0.125rem;
+          width: 100%;
+          background: grey;
+        }
+
+        .underline:before {
+          position: absolute;
+          content: "";
+          height: 100%;
+          width: 100%;
+          background: #e2ac6b;
+          transition: transform 0.3s linear;
+          transform: scaleX(0);
+        }
+
+        input:focus ~ .underline:before,
+        input:valid ~ .underline::before {
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
 }

@@ -10,6 +10,7 @@ import { CvComponent } from './cv/cv.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { ProjectComponent } from './project/project.component';
 import { BodyComponent } from './body/body.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,12 @@ import { BodyComponent } from './body/body.component';
     ProjectComponent,
     BodyComponent,
   ],
-  imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    FormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

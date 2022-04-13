@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+import { projectData } from './project-data';
 
 @Component({
   selector: 'app-project',
   templateUrl: './project.component.html',
-  styleUrls: ['./project.component.scss']
+  styleUrls: ['./project.component.scss'],
 })
 export class ProjectComponent implements OnInit {
+  projectData = projectData;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

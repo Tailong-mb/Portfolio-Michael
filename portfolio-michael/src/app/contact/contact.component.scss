@@ -110,6 +110,7 @@
         transition: all 0.2s;
       }
 
+      .textarea:valid,
       .textarea:focus {
         cursor: text;
         color: #333;

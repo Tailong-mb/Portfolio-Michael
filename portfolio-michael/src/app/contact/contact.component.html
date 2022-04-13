@@ -1,11 +1,33 @@
 <div class="contact-back">
   <h1>Contact</h1>
   <div class="wrapper">
-    <form (ngSubmit)="submitForm()">
+    <form (ngSubmit)="submitForm($event)">
+      <div class="name-space">
+        <div class="input-data">
+          <input
+            type="text"
+            name="firstName"
+            required
+            [(ngModel)]="firstName"
+          />
+          <div class="underline"></div>
+          <label>Nom</label>
+        </div>
+        <div class="input-data">
+          <input
+            type="text"
+            name="secondName"
+            required
+            [(ngModel)]="secondName"
+          />
+          <div class="underline"></div>
+          <label>Prenom</label>
+        </div>
+      </div>
       <div class="input-data">
-        <input type="text" name="name" required [(ngModel)]="name" />
+        <input type="text" name="subject" required [(ngModel)]="subject" />
         <div class="underline"></div>
-        <label>Nom</label>
+        <label>Sujet</label>
       </div>
       <div class="input-data">
         <input type="text" name="email" required [(ngModel)]="email" />
@@ -13,15 +35,15 @@
         <label>Email</label>
       </div>
 
-      <div class="name-zone">
-        <textarea
-          placeholder="Mettez votre message ici..."
-          name="message"
-          class="textarea"
-          [(ngModel)]="message"
-        ></textarea>
+      <textarea
+        placeholder="Mettez votre message ici..."
+        name="message"
+        class="textarea"
+        [(ngModel)]="message"
+      ></textarea>
+      <div class="button-container">
+        <button type="submit" class="submit-button">Envoyer</button>
       </div>
-      <button type="submit" class="submit-button">Envoyer</button>
     </form>
   </div>
 </div>

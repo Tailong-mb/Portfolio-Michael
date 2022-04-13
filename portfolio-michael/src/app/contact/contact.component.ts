@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 
 @Component({
   selector: 'app-contact',
@@ -6,27 +7,61 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent implements OnInit {
-  name: string = '';
+  firstName: string = '';
+  secondName: string = '';
   email: string = '';
   message: string = '';
+  subject: string = '';
 
   constructor() {}
 
   ngOnInit(): void {}
 
-  submitForm() {
-    if (
-      this.email
+  emptyAttribute(): boolean {
+    return (
+      this.firstName === '' ||
+      this.secondName === '' ||
+      this.email === '' ||
+      this.message === '' ||
+      this.subject === ''
+    );
+  }
+
+  submitForm(e: Event) {
+    if (this.emptyAttribute()) {
+      alert('Un champ est vide');
+    } else if (
+      !this.email
         .toLowerCase()
         .match(
           /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-        ) &&
-      (this.message === '' || this.message === undefined)
+        )
     ) {
-      const message = `My name is ${this.name}.\nMy email is ${this.email}.\nMy message is ${this.message}`;
-      alert('Message envoye !');
+      alert('email invalide');
     } else {
-      alert('Message vide ou email invalide');
+      e.preventDefault();
+      emailjs
+        .sendForm(
+          'gmail',
+          'template_n9gc8fu',
+          e.target as HTMLFormElement,
+          'BDOAawa1d11U5R8NT'
+        )
+        .then(
+          (result: EmailJSResponseStatus) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+      alert('Message envoyé !');
     }
+
+    this.firstName = '';
+    this.secondName = '';
+    this.email = '';
+    this.message = '';
+    this.subject = '';
   }
 }

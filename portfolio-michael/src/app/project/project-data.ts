@@ -8,10 +8,11 @@ export const projectData = [
     githubLink: 'https://github.com/Tailong-mb/Labygame_project',
   },
   {
-    title: 'Labygame',
-    imagePath: '../../assets/Ressources/Labygame.gif',
-    description: 'Mettre une description',
-    tools: 'Java, javafx',
-    githubLink: 'https://github.com/Tailong-mb/Labygame_project',
+    title: 'SnakeGame',
+    imagePath: '../../assets/Ressources/SnakeGame.gif',
+    description:
+      'Projet individuel dans le but de découvrir le langage python. On retrouve deux versions du traditionnel jeu "Snake", la première est conforme au jeu original, la seconde quant à elle génère des murs au fur et à mesure que le score augmente.',
+    tools: 'Python, Pygame',
+    githubLink: 'https://github.com/Tailong-mb/SnakeGame',
   },
 ];

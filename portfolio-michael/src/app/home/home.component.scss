@@ -1,0 +1,176 @@
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+
+  .blue-square {
+    height: 1.3rem;
+    width: 1.3rem;
+    background-color: blue;
+  }
+
+  span {
+    font-size: 30px;
+  }
+
+  p {
+    margin-top: 10px;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(110deg, #f4f7fa 60%, #f2bd85 60%);
+
+  .card {
+    margin-top: 1.5rem;
+    width: 300px;
+    height: 500px;
+    padding-top: 2rem;
+  }
+
+  .left-card {
+    background-color: #f6dec5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: -12px 12px 13px -8px rgba(43, 89, 141, 0.71);
+
+    h2 {
+      border-bottom: blue 2px solid;
+    }
+
+    p {
+      text-transform: uppercase;
+    }
+
+    .icon {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      background-color: #fff;
+      height: 50px;
+      width: 100%;
+
+      img {
+        height: 30px;
+        width: 30px;
+      }
+    }
+  }
+  .right-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h2 {
+      font-size: 3rem;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: row;
+      gap: 0.5rem;
+
+      button {
+        width: 130px;
+        height: 30px;
+        border-radius: 1rem;
+        text-transform: uppercase;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: 0.8s;
+        position: relative;
+      }
+
+      .cv-button {
+        color: #fff;
+        background: blue;
+        border: solid 1px blue;
+        z-index: 1;
+      }
+
+      .cv-button:hover {
+        color: blue;
+      }
+
+      .cv-button::before {
+        border-radius: 1rem;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        background: white;
+        transition: transform 300ms ease-in-out;
+        transform: scaleX(0);
+        transform-origin: left;
+      }
+
+      .cv-button:hover::before,
+      .cv-button:focus::before {
+        transform: scaleX(1);
+      }
+
+      .project-button {
+        color: #333;
+        background-color: #fff;
+        border: solid 1px black;
+        z-index: 1;
+      }
+
+      .project-button:hover {
+        color: white;
+      }
+
+      .project-button::before {
+        border-radius: 1rem;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        background: #333;
+        transition: transform 300ms ease-in-out;
+        transform: scaleX(0);
+        transform-origin: right;
+      }
+
+      .project-button:hover::before,
+      .project-button:focus::before {
+        transform: scaleX(1);
+      }
+    }
+
+    p {
+      text-align: justify;
+      text-justify: auto;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .card-container {
+    position: relative;
+    flex-wrap: wrap-reverse;
+    height: 1500px;
+  }
+}

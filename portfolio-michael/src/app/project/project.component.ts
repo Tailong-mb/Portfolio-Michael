@@ -18,10 +18,9 @@ import {
     trigger('listAnimation', [
       transition('* => *', [
         query(':enter', style({ opacity: 0 }), { optional: true }),
-
         query(
           ':enter',
-          stagger('300ms', [
+          stagger('200ms', [
             animate(
               '1s ease-in',
               keyframes([
@@ -43,7 +42,7 @@ import {
         ),
         query(
           ':leave',
-          stagger('200ms', [
+          stagger('100ms', [
             animate(
               '1s ease-in',
               keyframes([

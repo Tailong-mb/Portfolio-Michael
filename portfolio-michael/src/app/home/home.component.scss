@@ -98,18 +98,18 @@
         position: relative;
       }
 
-      .cv-button {
-        color: #fff;
-        background: blue;
+      .project-button {
+        color: blue;
+        background: #fff;
         border: solid 1px blue;
         z-index: 1;
       }
 
-      .cv-button:hover {
-        color: blue;
+      .project-button:hover {
+        color: #fff;
       }
 
-      .cv-button::before {
+      button::before {
         border-radius: 1rem;
         content: "";
         position: absolute;
@@ -118,46 +118,30 @@
         right: 0;
         bottom: 0;
         z-index: -1;
-        background: white;
+        background: blue;
         transition: transform 300ms ease-in-out;
         transform: scaleX(0);
         transform-origin: left;
       }
 
-      .cv-button:hover::before,
-      .cv-button:focus::before {
+      button:hover::before,
+      button:focus::before {
         transform: scaleX(1);
       }
 
-      .project-button {
-        color: #333;
-        background-color: #fff;
-        border: solid 1px black;
+      .cv-button {
+        color: #fff;
+        background-color: #f2bd85;
+        border: solid 1px #f2bd85;
         z-index: 1;
       }
 
-      .project-button:hover {
-        color: white;
+      .cv-button::before {
+        background-color: #fff;
       }
 
-      .project-button::before {
-        border-radius: 1rem;
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: -1;
-        background: #333;
-        transition: transform 300ms ease-in-out;
-        transform: scaleX(0);
-        transform-origin: right;
-      }
-
-      .project-button:hover::before,
-      .project-button:focus::before {
-        transform: scaleX(1);
+      .cv-button:hover {
+        color: #f2bd85;
       }
     }
 

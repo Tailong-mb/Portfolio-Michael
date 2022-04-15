@@ -44,7 +44,7 @@ import {
           ':leave',
           stagger('100ms', [
             animate(
-              '1s ease-in',
+              '0.7s ease-in',
               keyframes([
                 style({ opacity: 1, transform: 'translateY(0px)', offset: 0 }),
                 style({

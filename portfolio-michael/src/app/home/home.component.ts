@@ -18,9 +18,9 @@ import {
         query('.card', style({ opacity: 0, transform: 'translateX(-40px)' })),
         query(
           '.card',
-          stagger('500ms', [
+          stagger('400ms', [
             animate(
-              '800ms 1.2s ease-out',
+              '600ms 1s ease-out',
               style({ opacity: 1, transform: 'translateX(0)' })
             ),
           ])

@@ -1,1 +1,16 @@
-<p>experiences works!</p>
+<div class="experience-container" [@listAnimation]="dataExperience.length">
+  <div class="experience-entity" *ngFor="let data of dataExperience">
+    <div class="experience-text">
+      <div class="title">
+        <div class="main-title">
+          <span class="blue-square"></span>
+          <h2>{{ data.title }}</h2>
+        </div>
+        <h3>{{ data.location }}</h3>
+        <h4>{{ data.duree }}</h4>
+      </div>
+      <p>{{ data.description }}</p>
+    </div>
+    <img src="{{ data.logo }}" alt="logo-experience-entity" />
+  </div>
+</div>

@@ -1,0 +1,47 @@
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  .experience-entity {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    background: linear-gradient(110deg, #fff 60%, #f6dec5 60%);
+    box-shadow: -12px 12px 13px -8px rgba(43, 89, 141, 0.71);
+    padding: 2rem;
+
+    .experience-text {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      .title {
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        .main-title {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 5px;
+          .blue-square {
+            height: 1rem;
+            width: 1rem;
+            background-color: blue;
+          }
+          h2 {
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+
+    img {
+      width: 125px;
+      height: 125px;
+    }
+  }
+}

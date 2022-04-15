@@ -11,6 +11,9 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { ProjectComponent } from './project/project.component';
 import { BodyComponent } from './body/body.component';
 import { FormsModule } from '@angular/forms';
+import { FormationsComponent } from './formations/formations.component';
+import { ExperiencesComponent } from './experiences/experiences.component';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +24,9 @@ import { FormsModule } from '@angular/forms';
     SidenavComponent,
     ProjectComponent,
     BodyComponent,
+    FormationsComponent,
+    ExperiencesComponent,
+    SkillsComponent,
   ],
   imports: [
     BrowserModule,

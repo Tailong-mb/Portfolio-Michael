@@ -1,10 +1,37 @@
 import { Component, OnInit } from '@angular/core';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
+import {
+  trigger,
+  transition,
+  query,
+  stagger,
+  animate,
+  style,
+} from '@angular/animations';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
+  animations: [
+    trigger('contactAnimation', [
+      transition('void => *', [
+        query(
+          '.wrapper',
+          style({ opacity: 0, transform: 'translateX(-40px)' })
+        ),
+        query(
+          '.wrapper',
+          stagger('400ms', [
+            animate(
+              '600ms 1s ease-out',
+              style({ opacity: 1, transform: 'translateX(0)' })
+            ),
+          ])
+        ),
+      ]),
+    ]),
+  ],
 })
 export class ContactComponent implements OnInit {
   firstName: string = '';

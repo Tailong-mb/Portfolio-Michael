@@ -1,6 +1,6 @@
-<div class="experience-container" [@listAnimation]="dataFormation.length">
-    <div class="experience-entity" *ngFor="let data of dataFormation">
-      <div class="experience-text">
+<div class="formation-container" [@listAnimation]="dataFormation.length">
+    <div class="formation-entity" *ngFor="let data of dataFormation">
+      <div class="formation-text">
         <div class="title">
           <div class="main-title">
             <span class="blue-square"></span>
@@ -11,6 +11,6 @@
         </div>
         <p>{{ data.description }}</p>
       </div>
-      <img src="{{ data.logo }}" alt="logo-experience-entity" />
+      <img src="{{ data.logo }}" alt="logo-formation-entity" />
     </div>
   </div>

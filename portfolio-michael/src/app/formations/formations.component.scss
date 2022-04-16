@@ -1,8 +1,8 @@
-.experience-container {
+.formation-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  .experience-entity {
+  .formation-entity {
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -11,7 +11,7 @@
     box-shadow: -12px 12px 13px -8px rgba(43, 89, 141, 0.71);
     padding: 2rem;
 
-    .experience-text {
+    .formation-text {
       display: flex;
       flex-direction: column;
       gap: 0.5rem;

@@ -16,7 +16,7 @@ import {
   styleUrls: ['./formations.component.scss'],
   animations: [
     trigger('listAnimation', [
-      transition('* => *', [
+      transition('void => *', [
         query(':enter', style({ opacity: 0 }), { optional: true }),
         query(
           ':enter',

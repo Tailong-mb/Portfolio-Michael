@@ -22,9 +22,9 @@ import {
         ),
         query(
           '.wrapper',
-          stagger('400ms', [
+          stagger('300ms', [
             animate(
-              '600ms 1s ease-out',
+              '500ms 1s ease-out',
               style({ opacity: 1, transform: 'translateX(0)' })
             ),
           ])

@@ -15,15 +15,12 @@ import {
   animations: [
     trigger('skillsAnimation', [
       transition('void => *', [
+        query('.card', style({ opacity: 0, transform: 'translateX(-40px)' })),
         query(
           '.card',
-          style({ opacity: 0, transform: 'translateX(-40px)' })
-        ),
-        query(
-          '.card',
-          stagger('400ms', [
+          stagger('300ms', [
             animate(
-              '600ms 1s ease-out',
+              '500ms 1s ease-out',
               style({ opacity: 1, transform: 'translateX(0)' })
             ),
           ])

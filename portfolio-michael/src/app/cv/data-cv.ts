@@ -23,7 +23,7 @@ export const informationComplement = [
     description: 'Permis B',
   },
   {
-    icon: '../../assets/Ressources/github-brands.svg',
-    description: 'https://github.com/Tailong-mb',
+    icon: '../../assets/Ressources/language-solid.svg',
+    description: 'Anglais B2',
   },
 ];

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: left;
   flex-direction: row;
-  background-color: #f6dec5;
+  background: linear-gradient(110deg, #f4f7fa 60%, #f2bd85 60%);
   box-shadow: -12px 12px 13px -8px rgba(43, 89, 141, 0.71);
   padding: 1rem;
   margin-bottom: 2rem;
@@ -75,8 +75,8 @@
     width: 150px;
     height: 40px;
     font-size: 16px;
-    background-color: #f6dec5;
-    border: 1px solid #f6dec5;
+    background-color: #f2bd85;
+    border: 1px solid #f2bd85;
     box-shadow: -12px 12px 13px -8px rgba(43, 89, 141, 0.71);
     cursor: pointer;
     transition: 0.8s;
@@ -86,7 +86,7 @@
   }
 
   .button-cv:hover {
-    color: #f6dec5;
+    color: #f2bd85;
   }
 
   .button-cv::before {

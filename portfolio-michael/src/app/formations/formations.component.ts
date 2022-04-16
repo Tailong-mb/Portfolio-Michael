@@ -40,28 +40,6 @@ import {
           ]),
           { optional: true }
         ),
-        query(
-          ':leave',
-          stagger('100ms', [
-            animate(
-              '0.7s ease-in',
-              keyframes([
-                style({ opacity: 1, transform: 'translateY(0px)', offset: 0 }),
-                style({
-                  opacity: 0.5,
-                  transform: 'translateY(35px)',
-                  offset: 0.3,
-                }),
-                style({
-                  opacity: 0,
-                  transform: 'translateY(-75px)',
-                  offset: 1,
-                }),
-              ])
-            ),
-          ]),
-          { optional: true }
-        ),
       ]),
     ]),
   ],

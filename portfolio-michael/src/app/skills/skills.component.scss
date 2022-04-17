@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 2rem;
 
-  .skills-computer {
+  .card {
     background: linear-gradient(110deg, #f4f7fa 60%, #f2bd85 60%);
     box-shadow: -12px 12px 13px -8px rgba(43, 89, 141, 0.71);
     display: flex;
@@ -11,7 +11,7 @@
     gap: 1.5rem;
     padding: 2rem;
 
-    .skills-computer-container {
+    .card-entity {
       display: flex;
       flex-direction: column;
       gap: 1rem;
@@ -33,6 +33,7 @@
           position: relative;
           height: 10px;
           width: 100%;
+          border-radius: 10px;
           background: #f0f0f0;
           box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05),
             0px 1px rgba(255, 255, 255, 0.8);
@@ -50,7 +51,7 @@
             height: 100%;
             width: 80%;
             position: absolute;
-            background: blue;
+            background: #85baf2;
             border-radius: 10px;
             transform: scaleX(0);
             transform-origin: left;
@@ -80,6 +81,33 @@
             background: #000;
             padding: 1px 8px;
             border-radius: 3px;
+          }
+        }
+
+        .curiosity {
+          span {
+            width: 100%;
+          }
+          span::after {
+            content: "100%";
+          }
+        }
+
+        .teamwork {
+          span {
+            width: 85%;
+          }
+          span::after {
+            content: "85%";
+          }
+        }
+
+        .initiative {
+          span {
+            width: 90%;
+          }
+          span::after {
+            content: "90%";
           }
         }
 
@@ -163,7 +191,7 @@
   .blue-square {
     height: 1rem;
     width: 1rem;
-    background-color: blue;
+    background-color: #85baf2;
   }
 
   h2 {

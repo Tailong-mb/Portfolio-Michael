@@ -9,7 +9,7 @@
   .blue-square {
     height: 1.3rem;
     width: 1.3rem;
-    background-color: blue;
+    background-color: #85baf2;
   }
 
   span {
@@ -50,7 +50,7 @@
     box-shadow: -12px 12px 13px -8px rgba(43, 89, 141, 0.71);
 
     h2 {
-      border-bottom: blue 2px solid;
+      border-bottom: #85baf2 2px solid;
     }
 
     p {
@@ -99,9 +99,9 @@
       }
 
       .project-button {
-        color: blue;
+        color: #85baf2;
         background: #fff;
-        border: solid 1px blue;
+        border: solid 1px #85baf2;
         z-index: 1;
       }
 
@@ -118,7 +118,7 @@
         right: 0;
         bottom: 0;
         z-index: -1;
-        background: blue;
+        background: #85baf2;
         transition: transform 300ms ease-in-out;
         transform: scaleX(0);
         transform-origin: left;

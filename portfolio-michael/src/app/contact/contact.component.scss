@@ -142,17 +142,69 @@
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1366px) {
+  .contact-back {
+    height: 100%;
+    gap: 3rem;
+
+    h1 {
+      font-size: 5rem;
+    }
+
+    .wrapper {
+      max-width: 1000px;
+      min-height: 800px;
+
+      form {
+        gap: 2.5rem;
+
+        .textarea {
+          min-height: 400px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1365px) and (min-width: 1000px) {
+  .contact-back {
+    height: 100%;
+    gap: 3rem;
+
+    h1 {
+      font-size: 5rem;
+    }
+
+    .wrapper {
+      max-width: 800px;
+      min-height: 700px;
+
+      form {
+        gap: 2.5rem;
+
+        .textarea {
+          min-height: 400px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
   .contact-back {
     height: 100%;
     gap: 3rem;
 
     .wrapper {
       max-width: 800px;
-      min-height: 800px;
+      min-height: 700px;
 
       form {
         gap: 2.5rem;
+
+        .name-space {
+          flex-direction: column;
+        }
 
         .textarea {
           min-height: 400px;

@@ -1,11 +1,11 @@
 export const projectData = [
   {
-    title: 'Labygame',
+    title: 'Premier Portolio',
     imagePath: '../../assets/Ressources/Labygame.gif',
     description:
-      'Labygame est un projet dans fait dans un cadre scolaire avec deux camarades. Pour sortir du labyrinthe, le joueur devra trouver une clef cachée sans quoi la sortie ne sera pas ouverte. Le projet comporte trois interfaces, un menu, un environnement pour se déplacer dans le jeu et une interface de combat.',
-    tools: 'Java, Javafx, Maven, Lombok',
-    githubLink: 'https://github.com/Tailong-mb/Labygame_project',
+      "Projet personnel qui avait pour but de s'initier à Angular (component, routing, etc...) et de pratiquer des langages web. C'est l'occassion de créer mon premier site web qui me permet de présenter différents projets personnelles.",
+    tools: 'Angular, EmailJS, HTML, CSS, TypeScript',
+    githubLink: 'Privée pour le moment',
   },
   {
     title: 'Labygame',

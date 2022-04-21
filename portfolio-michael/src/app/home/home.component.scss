@@ -157,6 +157,12 @@
   }
 }
 
+@media (max-width: 1300px) and (min-width: 700px) {
+  .card-container {
+    height: 900px;
+  }
+}
+
 @media (max-width: 700px) {
   .card-container {
     flex-wrap: wrap;
@@ -242,16 +248,11 @@
 
 @media (min-width: 1300px) {
   .card-container {
+    height: 900px;
     display: flex;
     justify-content: left;
     align-items: left;
     flex-wrap: wrap;
-  }
-}
-
-@media (min-width: 1700px) {
-  .card-container {
-    height: 900px;
 
     .card {
       width: 400px;

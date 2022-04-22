@@ -4,7 +4,7 @@ export const dataExperience = [
     duree: '(Mai 2022 – Juillet 2022)',
     location: 'Pulsy Nancy',
     description:
-      'Apporter un soutien personnalisé aux élèves de licence afin de résoudre leurs difficultés en logique propositionnelle. L’ensemble des élèves rencontrés ont validé leurs modules de logique.',
+      'Stage effectué dans le cadre de ma formation (DUT Informatique), la description sera remplie lorsque ce dernier se sera achevé.',
     logo: '../../assets/Ressources/computer-solid.svg',
   },
   {

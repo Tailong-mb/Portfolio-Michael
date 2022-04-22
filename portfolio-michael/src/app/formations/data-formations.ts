@@ -4,7 +4,7 @@ export const dataFormation = [
     duree: '(2022 – 2025)',
     location: 'EPITECH NANCY',
     description:
-      'Apporter un soutien personnalisé aux élèves de licence afin de résoudre leurs difficultés en logique propositionnelle. L’ensemble des élèves rencontrés ont validé leurs modules de logique.',
+      "Formation à venir. J'ai choisi cette école pour sa pédagogie qui lui est propre. J'attends de cette formation un développement de mes compétences informatiques mais aussi une aventure humaine.",
     logo: '../../assets/Ressources/computer-solid.svg',
   },
   {

@@ -25,7 +25,7 @@ export const dataFormation = [
   },
   {
     title: 'License de Philosophie',
-    duree: '(2017 – 2019)',
+    duree: '(2016 – 2019)',
     location: 'Faculté de lettres de NANCY',
     description:
       "Acquisition d'une culture philosophique générale. Cette formation a permis de développer un esprit critique ainsi que des compétences relatives à l'argumentation et à l'analyse de texte.",

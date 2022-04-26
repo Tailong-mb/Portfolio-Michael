@@ -64,7 +64,7 @@
         label {
           position: absolute;
           bottom: 0.626rem;
-          left: 0px;
+          left: 0;
           color: grey;
           pointer-events: none;
           transition: all 0.3s ease;
@@ -72,7 +72,7 @@
 
         .underline {
           position: absolute;
-          bottom: 0px;
+          bottom: 0;
           height: 0.125rem;
           width: 100%;
           background: grey;

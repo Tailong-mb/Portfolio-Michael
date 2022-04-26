@@ -111,3 +111,10 @@
     }
   }
 }
+
+@media (min-width: 1680px) {
+  .formation-container{
+    display: flex;
+    align-items: center;
+  }
+}

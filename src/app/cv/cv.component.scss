@@ -1,6 +1,6 @@
 .head-cv {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   flex-direction: row;
   background: linear-gradient(110deg, #f4f7fa 60%, #f2bd85 60%);
   box-shadow: -12px 12px 13px -8px rgba(43, 89, 141, 0.71);
@@ -243,8 +243,8 @@
 }
 
 @media (min-width: 1680px) {
-  .button-container {
+  .head-container{
     display: flex;
-    justify-content: left;
+    justify-content: center;
   }
 }

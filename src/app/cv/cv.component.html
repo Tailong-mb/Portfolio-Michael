@@ -1,24 +1,26 @@
-<div class="head-cv">
-  <img src="" alt="img cv" />
-  <div class="information">
-    <div class="name-container">
-      <div class="top">
-        <span class="blue-square"></span>
-        <h1>Michael Bardou</h1>
-      </div>
-      <p>Étudiant en informatique</p>
-    </div>
-    <div class="information-details">
-      <div class="information-component-container">
-        <div class="information-component" *ngFor="let data of dataContact">
-          <img class="icon" src="{{ data.icon }}" />
-          <p>{{ data.description }}</p>
+<div class="head-container">
+  <div class="head-cv">
+    <img src="" alt="img cv" />
+    <div class="information">
+      <div class="name-container">
+        <div class="top">
+          <span class="blue-square"></span>
+          <h1>Michael Bardou</h1>
         </div>
+        <p>Étudiant en informatique</p>
       </div>
-      <div class="information-component-container">
-        <div class="information-component" *ngFor="let data of dataComplement">
-          <img class="icon" src="{{ data.icon }}" />
-          <p>{{ data.description }}</p>
+      <div class="information-details">
+        <div class="information-component-container">
+          <div class="information-component" *ngFor="let data of dataContact">
+            <img class="icon" src="{{ data.icon }}" alt="icon"/>
+            <p>{{ data.description }}</p>
+          </div>
+        </div>
+        <div class="information-component-container">
+          <div class="information-component" *ngFor="let data of dataComplement">
+            <img class="icon" src="{{ data.icon }}" alt="icon"/>
+            <p>{{ data.description }}</p>
+          </div>
         </div>
       </div>
     </div>

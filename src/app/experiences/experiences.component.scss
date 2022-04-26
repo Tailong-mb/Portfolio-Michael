@@ -110,3 +110,10 @@
     }
   }
 }
+
+@media (min-width: 1680px) {
+  .experience-container{
+    display: flex;
+    align-items: center;
+  }
+}

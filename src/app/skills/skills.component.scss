@@ -272,3 +272,14 @@
     }
   }
 }
+
+@media (min-width: 1680px) {
+  .skills-card-container{
+    display: flex;
+    align-items: center;
+
+    .card{
+      min-width: 1500px;
+    }
+  }
+}

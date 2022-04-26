@@ -146,6 +146,7 @@
   .button-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -246,5 +247,9 @@
   .head-container{
     display: flex;
     justify-content: center;
+    .head-cv{
+      min-width: 1500px;
+      display: flex;
+    }
   }
 }

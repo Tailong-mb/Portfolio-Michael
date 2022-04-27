@@ -20,7 +20,7 @@ export const dataExperience = [
     duree: '(Janvier 2019 – Février 2019)',
     location: 'Lycée Privé Saint-Léon-IX / Lycée Notre-Dame/Saint-Sigisbert',
     description:
-      "Stage effectué dans le cadre de ma license de philosophie dans deux lycées différents. L'objectif était de fournir un soutien aux professeurs par un accompagnement auprès des élèves lors des périodes de travaux pratiques. ",
+      "Stage effectué dans le cadre de ma licence de philosophie dans deux lycées différents. L'objectif était de fournir un soutien aux professeurs par un accompagnement auprès des élèves lors des périodes de travaux pratiques. ",
     logo: '../../assets/Ressources/book-solid.svg',
   },
 ];

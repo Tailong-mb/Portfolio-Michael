@@ -170,6 +170,11 @@
 }
 
 @media (max-width: 450px) {
+  .head{
+    h1{
+      font-size: 16px;
+    }
+  }
   .card-container {
     .card {
       width: 200px;

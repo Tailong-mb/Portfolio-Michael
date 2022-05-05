@@ -72,7 +72,7 @@ export class ContactComponent implements OnInit {
           'TOKEN_EMAIL',
           'TOKEN_TEMPLATE',
           e.target as HTMLFormElement,
-          'TOKEN_PUBLIC_KEY'
+          'TOKEN_PUBLIC'
         )
         .then(
           (result: EmailJSResponseStatus) => {

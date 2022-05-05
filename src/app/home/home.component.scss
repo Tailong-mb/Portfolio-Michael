@@ -49,9 +49,9 @@
     justify-content: space-between;
     box-shadow: -12px 12px 13px -8px rgba(43, 89, 141, 0.71);
 
-    img {
-      height: 125px;
-      width: 125px;
+    lottie-player {
+      height: 300px;
+      width: 300px;
     }
 
     h2 {
@@ -181,6 +181,11 @@
       display: flex;
       justify-content: space-around;
       gap: 1rem;
+
+      lottie-player{
+        height: 150px;
+        width: 150px;
+      }
     }
   }
 
@@ -218,9 +223,9 @@
       gap: 1rem;
       height: 450px;
 
-      img {
-        width: 80px;
-        height: 80px;
+      lottie-player {
+        width: 120px;
+        height: 120px;
       }
 
       h2 {

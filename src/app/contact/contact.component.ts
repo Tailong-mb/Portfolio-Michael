@@ -69,10 +69,10 @@ export class ContactComponent implements OnInit {
       e.preventDefault();
       emailjs
         .sendForm(
-          'gmail',
-          'template_n9gc8fu',
+          'TOKEN_EMAIL',
+          'TOKEN_TEMPLATE',
           e.target as HTMLFormElement,
-          'BDOAawa1d11U5R8NT'
+          'TOKEN_PUBLIC_KEY'
         )
         .then(
           (result: EmailJSResponseStatus) => {

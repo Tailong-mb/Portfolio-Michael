@@ -1,11 +1,11 @@
 export const projectData = [
   {
     title: 'Premier Portolio',
-    imagePath: '../../assets/Ressources/Labygame.gif',
+    imagePath: '../../assets/Ressources/portfolio.gif',
     description:
       "Projet personnel qui avait pour but de s'initier à Angular (component, routing, etc...) et de pratiquer des langages web. C'est l'occassion de créer mon premier site web qui me permet de présenter différents projets personnelles.",
     tools: 'Angular, EmailJS, HTML, CSS, TypeScript',
-    githubLink: 'Privée pour le moment',
+    githubLink: 'https://github.com/Tailong-mb/Portfolio-Michael',
   },
   {
     title: 'Labygame',

@@ -1,6 +1,7 @@
 .head-cv {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: row;
   background: linear-gradient(110deg, #f4f7fa 60%, #f2bd85 60%);
   box-shadow: -12px 12px 13px -8px rgba(43, 89, 141, 0.71);
@@ -9,9 +10,9 @@
   gap: 3rem;
   max-width: 1500px;
 
-  img {
-    height: 150px;
-    width: 150px;
+  lottie-player {
+    height:300px;
+    width: 300px;
   }
 
   .information {
@@ -117,10 +118,11 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .head-cv {
     display: flex;
     flex-direction: column;
+    align-items: normal;
   }
 }
 
@@ -150,42 +152,13 @@
   }
 }
 
-@media (max-width: 488px) {
-  .head-cv {
-    .information {
-      .name-container {
-        .top {
-          h1 {
-            font-size: 25px;
-          }
-        }
-        p {
-          font-size: 15px;
-        }
-      }
-    }
-  }
-}
 
 @media (max-width: 488px) {
   .head-cv {
-    .information {
-      .name-container {
-        .top {
-          h1 {
-            font-size: 25px;
-          }
-        }
-        p {
-          font-size: 15px;
-        }
-      }
+    lottie-player{
+      height: 200px;
+      width: 200px;
     }
-  }
-}
-
-@media (max-width: 430px) {
-  .head-cv {
     .information {
       .name-container {
         .top {
@@ -220,9 +193,9 @@
 
 @media (max-width: 360px) {
   .head-cv {
-    img {
-      height: 75px;
-      width: 75px;
+    lottie-player {
+      height: 125px;
+      width: 125px;
     }
     .information {
       .name-container {

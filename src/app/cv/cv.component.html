@@ -28,8 +28,21 @@
 </div>
 
 <div class="button-container">
-  <button class="button-cv" routerLink="experiences">Expériences</button>
-  <button class="button-cv" routerLink="formations">Formations</button>
-  <button class="button-cv" routerLink="skills">Compétences</button>
+  <button
+    class="button-cv" routerLink="experiences"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }">
+    Expériences</button>
+  <button
+    class="button-cv" routerLink="formations"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }">
+    Formations</button>
+  <button
+    class="button-cv"
+    routerLink="skills"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }">
+    Compétences</button>
 </div>
 <router-outlet></router-outlet>

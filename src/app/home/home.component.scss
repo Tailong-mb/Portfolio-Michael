@@ -136,8 +136,8 @@
 
       .cv-button {
         color: #fff;
-        background-color: #f2bd85;
-        border: solid 1px #f2bd85;
+        background-color: #85BAF2;
+        border: solid 1px #85BAF2;
         z-index: 1;
       }
 
@@ -146,7 +146,7 @@
       }
 
       .cv-button:hover {
-        color: #f2bd85;
+        color: #85BAF2;
       }
     }
 
@@ -157,13 +157,7 @@
   }
 }
 
-@media (max-width: 1300px) and (min-width: 700px) {
-  .card-container {
-    height: 900px;
-  }
-}
-
-@media (max-width: 700px) {
+@media (max-width: 780px) {
   .card-container {
     flex-wrap: wrap;
   }
@@ -254,7 +248,13 @@
   }
 }
 
-@media (min-width: 1300px) {
+@media (max-width: 1300px) and (min-width: 780px) {
+  .card-container {
+    height: 900px;
+  }
+}
+
+@media (min-width: 1300px)  and (max-width: 1600px){
   .card-container {
     height: 900px;
     display: flex;
@@ -276,5 +276,49 @@
   }
   p {
     font-size: 20px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .card-container {
+    height: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+
+    .card {
+      width: 500px;
+      height: 700px;
+    }
+
+    .left-card {
+      lottie-player {
+        height: 400px;
+        width: 400px;
+      }
+    }
+
+    .right-card {
+      .button-container {
+        button {
+          height: 45px;
+          width: 190px;
+          border: 5px;
+        }
+      }
+    }
+  }
+
+  h2 {
+    font-size: 45px;
+  }
+
+  h3 {
+    font-size: 45px;
+  }
+  p {
+    font-size: 22px;
   }
 }

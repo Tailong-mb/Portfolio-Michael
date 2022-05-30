@@ -14,7 +14,6 @@ import { FormsModule } from '@angular/forms';
 import { FormationsComponent } from './formations/formations.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
 import { SkillsComponent } from './skills/skills.component';
-import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +27,6 @@ import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
     FormationsComponent,
     ExperiencesComponent,
     SkillsComponent,
-    ScrollToTopComponent,
   ],
   imports: [
     BrowserModule,

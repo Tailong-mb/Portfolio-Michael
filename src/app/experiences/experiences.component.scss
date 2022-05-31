@@ -43,9 +43,18 @@
       }
     }
 
-    img {
-      width: 125px;
-      height: 125px;
+    lottie-player{
+      width: 300px;
+      height: 300px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .experience-container {
+    .experience-entity {
+      display: flex;
+      flex-direction: column;
     }
   }
 }
@@ -53,8 +62,6 @@
 @media (max-width: 420px) {
   .experience-container {
     .experience-entity {
-      display: flex;
-      flex-direction: column;
       gap: 4px;
       .experience-text {
         .title {
@@ -71,9 +78,9 @@
           }
         }
       }
-      img {
-        height: 75px;
-        width: 75px;
+      lottie-player {
+        height: 225px;
+        width: 225px;
       }
     }
   }
@@ -82,8 +89,6 @@
 @media (max-width: 350px) {
   .experience-container {
     .experience-entity {
-      display: flex;
-      flex-direction: column;
       gap: 7px;
       .experience-text {
         .title {
@@ -103,9 +108,9 @@
           font-size: 10px;
         }
       }
-      img {
-        height: 75px;
-        width: 75px;
+      lottie-player {
+        height: 125px;
+        width: 125px;
       }
     }
   }

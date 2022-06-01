@@ -162,9 +162,9 @@
       justify-content: space-around;
       align-items: center;
 
-      img {
-        width: 125px;
-        height: 125px;
+      lottie-player {
+        max-width: 225px;
+        max-height: 225px;
       }
 
       .hobbies-text {
@@ -200,7 +200,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1176px) {
   .skills-card-container {
     .card {
       padding: 1rem;
@@ -224,9 +224,9 @@
         display: flex;
         flex-direction: column-reverse;
         gap: 1rem;
-        img {
-          height: 75px;
-          width: 75px;
+        lottie-player{
+          max-height: 175px;
+          max-width: 175px;
         }
       }
     }
@@ -256,9 +256,9 @@
       }
 
       .hobbies-container {
-        img {
-          height: 50px;
-          width: 50px;
+        lottie-player {
+          max-height: 150px;
+          max-width: 150px;
         }
         .hobbies-text {
           h3 {

@@ -1,6 +1,12 @@
 <div class="head-container">
   <div class="head-cv">
-    <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_rycdh53q.json" background="transparent"  speed="1" loop autoplay></lottie-player>
+    <lottie-player
+      src="https://assets5.lottiefiles.com/packages/lf20_rycdh53q.json"
+      background="transparent"
+      speed="1"
+      loop
+      autoplay
+    ></lottie-player>
     <div class="information">
       <div class="name-container">
         <div class="top">
@@ -12,13 +18,16 @@
       <div class="information-details">
         <div class="information-component-container">
           <div class="information-component" *ngFor="let data of dataContact">
-            <img class="icon" src="{{ data.icon }}" alt="icon"/>
+            <img class="icon" src="{{ data.icon }}" alt="icon" />
             <p>{{ data.description }}</p>
           </div>
         </div>
         <div class="information-component-container">
-          <div class="information-component" *ngFor="let data of dataComplement">
-            <img class="icon" src="{{ data.icon }}" alt="icon"/>
+          <div
+            class="information-component"
+            *ngFor="let data of dataComplement"
+          >
+            <img class="icon" src="{{ data.icon }}" alt="icon" />
             <p>{{ data.description }}</p>
           </div>
         </div>
@@ -29,20 +38,28 @@
 
 <div class="button-container">
   <button
-    class="button-cv" routerLink="experiences"
+    class="button-cv"
+    routerLink="experiences"
     routerLinkActive="active"
-    [routerLinkActiveOptions]="{ exact: true }">
-    Expériences</button>
+    [routerLinkActiveOptions]="{ exact: true }"
+  >
+    Expériences
+  </button>
   <button
-    class="button-cv" routerLink="formations"
+    class="button-cv"
+    routerLink="formations"
     routerLinkActive="active"
-    [routerLinkActiveOptions]="{ exact: true }">
-    Formations</button>
+    [routerLinkActiveOptions]="{ exact: true }"
+  >
+    Formations
+  </button>
   <button
     class="button-cv"
     routerLink="skills"
     routerLinkActive="active"
-    [routerLinkActiveOptions]="{ exact: true }">
-    Compétences</button>
+    [routerLinkActiveOptions]="{ exact: true }"
+  >
+    Compétences
+  </button>
 </div>
 <router-outlet></router-outlet>

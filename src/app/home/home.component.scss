@@ -136,8 +136,8 @@
 
       .cv-button {
         color: #fff;
-        background-color: #85BAF2;
-        border: solid 1px #85BAF2;
+        background-color: #85baf2;
+        border: solid 1px #85baf2;
         z-index: 1;
       }
 
@@ -146,7 +146,7 @@
       }
 
       .cv-button:hover {
-        color: #85BAF2;
+        color: #85baf2;
       }
     }
 
@@ -164,8 +164,8 @@
 }
 
 @media (max-width: 450px) {
-  .head{
-    h1{
+  .head {
+    h1 {
       font-size: 16px;
     }
   }
@@ -181,7 +181,7 @@
       justify-content: space-around;
       gap: 1rem;
 
-      lottie-player{
+      lottie-player {
         height: 150px;
         width: 150px;
       }
@@ -197,7 +197,7 @@
   }
   p {
     font-size: 12px;
-    margin:1rem;
+    margin: 1rem;
   }
 }
 
@@ -254,7 +254,7 @@
   }
 }
 
-@media (min-width: 1300px)  and (max-width: 1600px){
+@media (min-width: 1300px) and (max-width: 1600px) {
   .card-container {
     height: 900px;
     display: flex;

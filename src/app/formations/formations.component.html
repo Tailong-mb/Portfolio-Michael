@@ -1,16 +1,16 @@
 <div class="formation-container" [@listAnimation]="dataFormation.length">
-    <div class="formation-entity" *ngFor="let data of dataFormation">
-      <div class="formation-text">
-        <div class="title">
-          <div class="main-title">
-            <span class="blue-square"></span>
-            <h2>{{ data.title }}</h2>
-          </div>
-          <h3>{{ data.location }}</h3>
-          <h4>{{ data.duree }}</h4>
+  <div class="formation-entity" *ngFor="let data of dataFormation">
+    <div class="formation-text">
+      <div class="title">
+        <div class="main-title">
+          <span class="blue-square"></span>
+          <h2>{{ data.title }}</h2>
         </div>
-        <p>{{ data.description }}</p>
+        <h3>{{ data.location }}</h3>
+        <h4>{{ data.duree }}</h4>
       </div>
-      <img src="{{ data.logo }}" alt="logo-formation-entity" />
+      <p>{{ data.description }}</p>
     </div>
+    <img src="{{ data.logo }}" alt="logo-formation-entity" />
   </div>
+</div>

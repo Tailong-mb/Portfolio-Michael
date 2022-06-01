@@ -47,7 +47,6 @@ interface SideNavToglle {
   ],
 })
 export class SidenavComponent implements OnInit {
-  
   @Output() onToggleSideNav: EventEmitter<SideNavToglle> = new EventEmitter();
   collapsed = false;
   navData = navbarData;
@@ -64,7 +63,7 @@ export class SidenavComponent implements OnInit {
       });
     }
   }
-  
+
   ngOnInit(): void {
     this.screenWidth = window.innerWidth;
   }

@@ -99,17 +99,18 @@
       }
     }
     .project-presentation {
-      p,a{
+      p,
+      a {
         font-size: 11px;
       }
-      .project-item-tools{
+      .project-item-tools {
         font-size: 12px;
       }
       .project-item-link {
         display: flex;
         flex-direction: row;
 
-        a{
+        a {
           font-size: 10px;
         }
       }
@@ -160,7 +161,7 @@
 }
 
 @media (min-width: 1200px) {
-  .container{
+  .container {
     display: flex;
     align-items: center;
     flex-direction: column;

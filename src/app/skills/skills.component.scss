@@ -155,29 +155,31 @@
     gap: 1.5rem;
     padding: 2rem;
 
-    .hobbies-container {
-      display: flex;
-      flex-direction: row;
-      gap: 1rem;
-      justify-content: space-around;
-      align-items: center;
-
-      lottie-player {
-        max-width: 225px;
-        max-height: 225px;
-      }
-
-      .hobbies-text {
+    .hobbies {
+      .hobbies-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 1rem;
+        justify-content: space-around;
+        align-items: center;
 
-        h3 {
-          text-transform: uppercase;
+        lottie-player {
+          max-width: 225px;
+          max-height: 225px;
         }
 
-        p {
-          text-align: justify;
+        .hobbies-text {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+
+          h3 {
+            text-transform: uppercase;
+          }
+
+          p {
+            text-align: justify;
+          }
         }
       }
     }
@@ -220,13 +222,15 @@
         }
       }
 
-      .hobbies-container {
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 1rem;
-        lottie-player {
-          max-height: 175px;
-          max-width: 175px;
+      .hobbies {
+        .hobbies-container {
+          display: flex;
+          flex-direction: column-reverse;
+          gap: 1rem;
+          lottie-player {
+            max-height: 175px;
+            max-width: 175px;
+          }
         }
       }
     }
@@ -255,17 +259,19 @@
         }
       }
 
-      .hobbies-container {
-        lottie-player {
-          max-height: 150px;
-          max-width: 150px;
-        }
-        .hobbies-text {
-          h3 {
-            font-size: 12px;
+      .hobbies {
+        .hobbies-container {
+          lottie-player {
+            max-height: 150px;
+            max-width: 150px;
           }
-          p {
-            font-size: 11px;
+          .hobbies-text {
+            h3 {
+              font-size: 12px;
+            }
+            p {
+              font-size: 11px;
+            }
           }
         }
       }

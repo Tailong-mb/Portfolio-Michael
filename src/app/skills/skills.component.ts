@@ -7,6 +7,7 @@ import {
   animate,
   style,
 } from '@angular/animations';
+import { dataHobbie } from './skills-data';
 
 @Component({
   selector: 'app-skills',
@@ -30,6 +31,7 @@ import {
   ],
 })
 export class SkillsComponent implements OnInit {
+  dataHobbies = dataHobbie;
   constructor() {}
 
   ngOnInit(): void {}

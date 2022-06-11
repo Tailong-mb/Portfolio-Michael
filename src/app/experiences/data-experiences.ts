@@ -4,7 +4,7 @@ export const dataExperience = [
     duree: '(Mai 2022 – Juillet 2022)',
     location: 'Pulsy Nancy',
     description:
-      'Stage effectué dans le cadre de ma formation (DUT Informatique), la description sera remplie lorsque ce dernier se sera achevé.',
+      'Stage effectué dans le cadre de ma formation (DUT Informatique), la description sera remplie lorsque ce dernier sera achevé.',
     logo: 'https://assets6.lottiefiles.com/private_files/lf30_pvi8w5ye.json',
   },
   {

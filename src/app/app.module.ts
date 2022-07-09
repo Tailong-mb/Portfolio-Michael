@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { FormationsComponent } from './formations/formations.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
 import { SkillsComponent } from './skills/skills.component';
+import { RoomComponent } from './room/room.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { SkillsComponent } from './skills/skills.component';
     FormationsComponent,
     ExperiencesComponent,
     SkillsComponent,
+    RoomComponent,
   ],
   imports: [
     BrowserModule,

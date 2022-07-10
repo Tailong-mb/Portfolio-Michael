@@ -25,208 +25,210 @@
     }
   }
 
-  .wrapper {
-    max-width: 600px;
-    width: 100%;
-    background: #fff;
-    padding: 1.875rem;
-    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
-    border-radius: 0.313rem;
-    margin-bottom: 2rem;
+  .container {
+    .wrapper {
+      max-width: 600px;
+      width: 100%;
+      background: #fff;
+      padding: 1.875rem;
+      box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+      border-radius: 0.313rem;
+      margin-bottom: 2rem;
 
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: calc(100% + 1.65rem);
-
-      .name-space {
+      form {
         display: flex;
-        flex-direction: row;
-        gap: 1.625rem;
-      }
-
-      .input-data {
-        height: 2.5rem;
-        width: 100%;
-        position: relative;
-
-        input {
-          height: 100%;
-          width: 100%;
-          border: none;
-          font-size: 17px;
-          border-bottom: 2px solid silver;
-        }
-
-        input:focus ~ label,
-        input:valid ~ label {
-          transform: translateY(-1.25rem);
-          font-size: 0.938rem;
-          color: #e2ac6b;
-        }
-
-        label {
-          position: absolute;
-          bottom: 0.626rem;
-          left: 0;
-          color: grey;
-          pointer-events: none;
-          transition: all 0.3s ease;
-        }
-
-        .underline {
-          position: absolute;
-          bottom: 0;
-          height: 0.125rem;
-          width: 100%;
-          background: grey;
-        }
-
-        .underline:before {
-          position: absolute;
-          content: "";
-          height: 100%;
-          width: 100%;
-          background: #e2ac6b;
-          transition: transform 0.3s linear;
-          transform: scaleX(0);
-        }
-
-        input:focus ~ .underline:before,
-        input:valid ~ .underline::before {
-          transform: scaleX(1);
-        }
-      }
-
-      .textarea {
-        background-color: #ddd;
-        color: #666;
-        padding: 1em;
-        border-radius: 0.626rem;
-        border: 0.125rem solid transparent;
-        outline: none;
-        font-weight: 500;
-        font-size: 1rem;
-        line-height: 1.4;
-        width: 100%;
-        min-height: 12rem;
-        transition: all 0.2s;
-      }
-
-      .textarea:valid,
-      .textarea:focus {
-        cursor: text;
-        color: #333;
-        background-color: white;
-        border-color: #e2ac6b;
-      }
-
-      .button-container {
-        display: flex;
-        justify-content: center;
-        .submit-button {
-          overflow: hidden;
-          border-radius: 50%;
-          color: white;
-          border-color: black;
-          width: 75px;
-          height: 75px;
-          font-size: 0.7rem;
-          padding: 0;
-          transition: color 0.3s linear;
-          background-color: #f2bd85;
-        }
-
-        .submit-button:hover {
-          color: black;
-          background-color: #fff;
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: 1366px) {
-  .contact-back {
-    height: 100%;
-    gap: 3rem;
-
-    .wrapper {
-      max-width: 1000px;
-      min-height: 800px;
-
-      form {
-        gap: 2.5rem;
-
-        .textarea {
-          min-height: 400px;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 1365px) and (min-width: 1000px) {
-  .contact-back {
-    height: 100%;
-    gap: 3rem;
-
-    .wrapper {
-      max-width: 800px;
-      min-height: 700px;
-
-      form {
-        gap: 2.5rem;
-
-        .textarea {
-          min-height: 400px;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 420px) {
-  .contact-back {
-    height: 100%;
-    gap: 3rem;
-
-    .title {
-      h1 {
-        font-size: 40px;
-        border: none;
-        border-bottom: 4px solid #85baf2;
-      }
-      .blue-square {
-        height: 0;
-        width: 0;
-      }
-    }
-
-    .wrapper {
-      max-width: 800px;
-      min-height: 700px;
-
-      form {
-        gap: 2.5rem;
+        flex-direction: column;
+        gap: calc(100% + 1.65rem);
 
         .name-space {
-          flex-direction: column;
+          display: flex;
+          flex-direction: row;
+          gap: 1.625rem;
+        }
+
+        .input-data {
+          height: 2.5rem;
+          width: 100%;
+          position: relative;
+
+          input {
+            height: 100%;
+            width: 100%;
+            border: none;
+            font-size: 17px;
+            border-bottom: 2px solid silver;
+          }
+
+          input:focus ~ label,
+          input:valid ~ label {
+            transform: translateY(-1.25rem);
+            font-size: 0.938rem;
+            color: #e2ac6b;
+          }
+
+          label {
+            position: absolute;
+            bottom: 0.626rem;
+            left: 0;
+            color: grey;
+            pointer-events: none;
+            transition: all 0.3s ease;
+          }
+
+          .underline {
+            position: absolute;
+            bottom: 0;
+            height: 0.125rem;
+            width: 100%;
+            background: grey;
+          }
+
+          .underline:before {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 100%;
+            background: #e2ac6b;
+            transition: transform 0.3s linear;
+            transform: scaleX(0);
+          }
+
+          input:focus ~ .underline:before,
+          input:valid ~ .underline::before {
+            transform: scaleX(1);
+          }
         }
 
         .textarea {
-          min-height: 400px;
+          background-color: #ddd;
+          color: #666;
+          padding: 1em;
+          border-radius: 0.626rem;
+          border: 0.125rem solid transparent;
+          outline: none;
+          font-weight: 500;
+          font-size: 1rem;
+          line-height: 1.4;
+          width: 100%;
+          min-height: 12rem;
+          transition: all 0.2s;
+        }
+
+        .textarea:valid,
+        .textarea:focus {
+          cursor: text;
+          color: #333;
+          background-color: white;
+          border-color: #e2ac6b;
+        }
+
+        .button-container {
+          display: flex;
+          justify-content: center;
+          .submit-button {
+            overflow: hidden;
+            border-radius: 50%;
+            color: white;
+            border-color: black;
+            width: 75px;
+            height: 75px;
+            font-size: 0.7rem;
+            padding: 0;
+            transition: color 0.3s linear;
+            background-color: #f2bd85;
+          }
+
+          .submit-button:hover {
+            color: black;
+            background-color: #fff;
+          }
         }
       }
     }
   }
-}
 
-@media (max-width: 350px) {
-  .contact-back {
-    .title {
-      h1 {
-        font-size: 30px;
+  @media (min-width: 1366px) {
+    .contact-back {
+      height: 100%;
+      gap: 3rem;
+
+      .wrapper {
+        max-width: 1000px;
+        min-height: 800px;
+
+        form {
+          gap: 2.5rem;
+
+          .textarea {
+            min-height: 400px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1365px) and (min-width: 1000px) {
+    .contact-back {
+      height: 100%;
+      gap: 3rem;
+
+      .wrapper {
+        max-width: 800px;
+        min-height: 700px;
+
+        form {
+          gap: 2.5rem;
+
+          .textarea {
+            min-height: 400px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 420px) {
+    .contact-back {
+      height: 100%;
+      gap: 3rem;
+
+      .title {
+        h1 {
+          font-size: 40px;
+          border: none;
+          border-bottom: 4px solid #85baf2;
+        }
+        .blue-square {
+          height: 0;
+          width: 0;
+        }
+      }
+
+      .wrapper {
+        max-width: 800px;
+        min-height: 700px;
+
+        form {
+          gap: 2.5rem;
+
+          .name-space {
+            flex-direction: column;
+          }
+
+          .textarea {
+            min-height: 400px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 350px) {
+    .contact-back {
+      .title {
+        h1 {
+          font-size: 30px;
+        }
       }
     }
   }

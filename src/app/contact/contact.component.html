@@ -3,52 +3,55 @@
     <span class="blue-square"></span>
     <h1>Contact</h1>
   </div>
-  <div class="wrapper">
-    <form (ngSubmit)="submitForm($event)">
-      <div class="name-space">
-        <div class="input-data">
-          <input
-            type="text"
-            name="firstName"
-            required
-            [(ngModel)]="firstName"
-          />
-          <div class="underline"></div>
-          <label>Nom</label>
+  <div class="container">
+    <app-room></app-room>
+    <div class="wrapper">
+      <form (ngSubmit)="submitForm($event)">
+        <div class="name-space">
+          <div class="input-data">
+            <input
+              type="text"
+              name="firstName"
+              required
+              [(ngModel)]="firstName"
+            />
+            <div class="underline"></div>
+            <label>Nom</label>
+          </div>
+          <div class="input-data">
+            <input
+              type="text"
+              name="secondName"
+              required
+              [(ngModel)]="secondName"
+            />
+            <div class="underline"></div>
+            <label>Prenom</label>
+          </div>
         </div>
         <div class="input-data">
-          <input
-            type="text"
-            name="secondName"
-            required
-            [(ngModel)]="secondName"
-          />
+          <input type="text" name="subject" required [(ngModel)]="subject" />
           <div class="underline"></div>
-          <label>Prenom</label>
+          <label>Sujet</label>
         </div>
-      </div>
-      <div class="input-data">
-        <input type="text" name="subject" required [(ngModel)]="subject" />
-        <div class="underline"></div>
-        <label>Sujet</label>
-      </div>
-      <div class="input-data">
-        <input type="text" name="email" required [(ngModel)]="email" />
-        <div class="underline"></div>
-        <label>Email</label>
-      </div>
+        <div class="input-data">
+          <input type="text" name="email" required [(ngModel)]="email" />
+          <div class="underline"></div>
+          <label>Email</label>
+        </div>
 
-      <textarea
-        placeholder="Mettez votre message ici..."
-        type="text"
-        required
-        name="message"
-        class="textarea"
-        [(ngModel)]="message"
-      ></textarea>
-      <div class="button-container">
-        <button type="submit" class="submit-button">Envoyer</button>
-      </div>
-    </form>
+        <textarea
+          placeholder="Mettez votre message ici..."
+          type="text"
+          required
+          name="message"
+          class="textarea"
+          [(ngModel)]="message"
+        ></textarea>
+        <div class="button-container">
+          <button type="submit" class="submit-button">Envoyer</button>
+        </div>
+      </form>
+    </div>
   </div>
 </div>

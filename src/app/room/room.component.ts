@@ -44,6 +44,7 @@ export class RoomComponent implements OnInit {
     );
 
     this.perspectiveCamera.position.setY(-5);
+    this.perspectiveCamera.position.setX(0);
 
     this.controls = new OrbitControls(
       this.perspectiveCamera,
@@ -53,8 +54,7 @@ export class RoomComponent implements OnInit {
     this.controls.update();
 
     let light = new THREE.DirectionalLight(0xffffff, 1.0);
-    light.position.set(20, 100, 10);
-    light.target.position.set(0, 0, 0);
+    light.position.setY(-5);
     light.castShadow = true;
     light.shadow.bias = -0.001;
     light.shadow.mapSize.width = 2048;
@@ -77,7 +77,7 @@ export class RoomComponent implements OnInit {
       (gltf) => {
         this.model = gltf.scene;
         this.model.rotation.y = 0;
-        this.model.rotation.x = 0;
+        this.model.rotation.x = 2;
         this.scene.add(this.model);
       },
       undefined,
@@ -97,7 +97,7 @@ export class RoomComponent implements OnInit {
     this.renderer = new THREE.WebGLRenderer({ canvas: this.canvas });
     this.renderer.setPixelRatio(devicePixelRatio);
     this.renderer.setSize(this.canvas.clientWidth, this.canvas.clientHeight);
-    this.renderer.setClearColor(0xa3a3a3);
+    this.renderer.setClearColor(0x000000,0);
 
     let component: RoomComponent = this;
     (function render() {

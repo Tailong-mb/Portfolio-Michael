@@ -151,100 +151,106 @@
       }
     }
   }
+}
 
-  @media (min-width: 1366px) {
-    .contact-back {
-      height: 100%;
-      gap: 3rem;
+@media (min-width: 1366px) {
+  .contact-back {
+    height: 100%;
+    gap: 3rem;
 
-      .container {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        align-items: center;
+    .container {
+      .wrapper {
+        max-width: 1000px;
+        min-height: 800px;
 
-        .wrapper {
-          max-width: 1000px;
-          min-height: 800px;
+        form {
+          gap: 2.5rem;
 
-          form {
-            gap: 2.5rem;
-
-            .textarea {
-              min-height: 400px;
-            }
+          .textarea {
+            min-height: 400px;
           }
         }
       }
     }
   }
+}
 
-  @media (max-width: 1365px) and (min-width: 1000px) {
-    .contact-back {
-      height: 100%;
-      gap: 3rem;
+@media (max-width: 1365px) and (min-width: 1000px) {
+  .contact-back {
+    height: 100%;
+    gap: 3rem;
 
-      .container {
-        .wrapper {
-          max-width: 800px;
-          min-height: 700px;
+    .container {
+      .wrapper {
+        max-width: 700px;
+        min-height: 600px;
 
-          form {
-            gap: 2.5rem;
+        form {
+          gap: 2.5rem;
 
-            .textarea {
-              min-height: 400px;
-            }
-          }
-        }
-      }
-    }
-
-    @media (max-width: 420px) {
-      .contact-back {
-        height: 100%;
-        gap: 3rem;
-
-        .title {
-          h1 {
-            font-size: 40px;
-            border: none;
-            border-bottom: 4px solid #85baf2;
-          }
-          .blue-square {
-            height: 0;
-            width: 0;
-          }
-        }
-
-        .container {
-          .wrapper {
-            max-width: 800px;
-            min-height: 700px;
-
-            form {
-              gap: 2.5rem;
-
-              .name-space {
-                flex-direction: column;
-              }
-
-              .textarea {
-                min-height: 400px;
-              }
-            }
+          .textarea {
+            min-height: 400px;
           }
         }
       }
     }
   }
+}
 
-  @media (max-width: 350px) {
-    .contact-back {
-      .title {
-        h1 {
-          font-size: 30px;
+@media (max-width: 1000px) {
+  .contact-back {
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .contact-back {
+    height: 100%;
+    gap: 3rem;
+
+    .title {
+      h1 {
+        font-size: 40px;
+        border: none;
+        border-bottom: 4px solid #85baf2;
+      }
+      .blue-square {
+        height: 0;
+        width: 0;
+      }
+    }
+
+    .container {
+      .wrapper {
+        max-width: 800px;
+        min-height: 700px;
+
+        form {
+          gap: 2.5rem;
+
+          .name-space {
+            flex-direction: column;
+          }
+
+          .textarea {
+            min-height: 400px;
+          }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .contact-back {
+    .title {
+      h1 {
+        font-size: 30px;
       }
     }
   }

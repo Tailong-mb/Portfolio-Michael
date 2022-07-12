@@ -85,19 +85,13 @@ export class RoomComponent implements OnInit {
         console.log(error);
       }
     );
-
-    window.addEventListener('resize', () => {
-      this.perspectiveCamera.aspect = window.innerWidth / window.innerHeight;
-      this.perspectiveCamera.updateProjectionMatrix();
-      this.renderer.setSize(window.innerWidth, window.innerHeight);
-    });
   }
 
   private startRenderingLoop() {
     this.renderer = new THREE.WebGLRenderer({ canvas: this.canvas });
     this.renderer.setPixelRatio(devicePixelRatio);
     this.renderer.setSize(this.canvas.clientWidth, this.canvas.clientHeight);
-    this.renderer.setClearColor(0x000000,0);
+    this.renderer.setClearColor(0x000000, 0);
 
     let component: RoomComponent = this;
     (function render() {
